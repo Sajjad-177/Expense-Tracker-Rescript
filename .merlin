@@ -1,0 +1,24 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/lib/ocaml
+B /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/koenig/Desktop/expense-tracker-rescript/node_modules/@rescript/react/lib/ocaml
+B /Users/koenig/Desktop/expense-tracker-rescript/node_modules/@rescript/react/lib/ocaml
+S src
+B lib/bs/src
+S src/components/Header
+B lib/bs/src/components/Header
+S src/components/History
+B lib/bs/src/components/History
+S src/components/Amounts
+B lib/bs/src/components/Amounts
+S src/components/Balance
+B lib/bs/src/components/Balance
+S src/components/AddTxnForm
+B lib/bs/src/components/AddTxnForm
+S src/components/App
+B lib/bs/src/components/App
+S src/utils
+B lib/bs/src/utils
+####BSB GENERATED: NO EDIT}

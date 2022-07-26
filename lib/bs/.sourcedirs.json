@@ -1,0 +1,1 @@
+{ "dirs" : [ "src" , "src/components" , "src/components/Header" , "src/components/History" , "src/components/Amounts" , "src/components/Balance" , "src/components/AddTxnForm" , "src/components/App" , "src/styles" , "src/utils" ] , "pkgs" : [ [ "@rescript/react" , "/Users/koenig/Desktop/expense-tracker-rescript/node_modules/@rescript/react" ] ] , "generated" : [] }

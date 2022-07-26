@@ -1,0 +1,42 @@
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.gap-1 {
+    gap: 0.5rem;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.border-btm {
+    padding-bottom: 0.7rem;
+    border-bottom: 1.5px solid rgb(212, 212, 212);
+}
+
+.text-align-center {
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o index.cmi : cp ../bs/src/index.cmi
+o index.cmj : cp ../bs/src/index.cmj
+o index.cmt : cp ../bs/src/index.cmt
+o index.res : cp ../../src/index.res
+o Header.cmi : cp ../bs/src/components/Header/Header.cmi
+o Header.cmj : cp ../bs/src/components/Header/Header.cmj
+o Header.cmt : cp ../bs/src/components/Header/Header.cmt
+o Header.res : cp ../../src/components/Header/Header.res
+o History.cmi : cp ../bs/src/components/History/History.cmi
+o History.cmj : cp ../bs/src/components/History/History.cmj
+o History.cmt : cp ../bs/src/components/History/History.cmt
+o History.res : cp ../../src/components/History/History.res
+o HistoryUtils.cmi : cp ../bs/src/components/History/HistoryUtils.cmi
+o HistoryUtils.cmj : cp ../bs/src/components/History/HistoryUtils.cmj
+o HistoryUtils.cmt : cp ../bs/src/components/History/HistoryUtils.cmt
+o HistoryUtils.res : cp ../../src/components/History/HistoryUtils.res
+o Amounts.cmi : cp ../bs/src/components/Amounts/Amounts.cmi
+o Amounts.cmj : cp ../bs/src/components/Amounts/Amounts.cmj
+o Amounts.cmt : cp ../bs/src/components/Amounts/Amounts.cmt
+o Amounts.res : cp ../../src/components/Amounts/Amounts.res
+o Balance.cmi : cp ../bs/src/components/Balance/Balance.cmi
+o Balance.cmj : cp ../bs/src/components/Balance/Balance.cmj
+o Balance.cmt : cp ../bs/src/components/Balance/Balance.cmt
+o Balance.res : cp ../../src/components/Balance/Balance.res
+o AddTxnForm.cmi : cp ../bs/src/components/AddTxnForm/AddTxnForm.cmi
+o AddTxnForm.cmj : cp ../bs/src/components/AddTxnForm/AddTxnForm.cmj
+o AddTxnForm.cmt : cp ../bs/src/components/AddTxnForm/AddTxnForm.cmt
+o AddTxnForm.res : cp ../../src/components/AddTxnForm/AddTxnForm.res
+o AddTxnFormUtils.cmi : cp ../bs/src/components/AddTxnForm/AddTxnFormUtils.cmi
+o AddTxnFormUtils.cmj : cp ../bs/src/components/AddTxnForm/AddTxnFormUtils.cmj
+o AddTxnFormUtils.cmt : cp ../bs/src/components/AddTxnForm/AddTxnFormUtils.cmt
+o AddTxnFormUtils.res : cp ../../src/components/AddTxnForm/AddTxnFormUtils.res
+o App.cmi : cp ../bs/src/components/App/App.cmi
+o App.cmj : cp ../bs/src/components/App/App.cmj
+o App.cmt : cp ../bs/src/components/App/App.cmt
+o App.res : cp ../../src/components/App/App.res
+o Types.cmi : cp ../bs/src/utils/Types.cmi
+o Types.cmj : cp ../bs/src/utils/Types.cmj
+o Types.cmt : cp ../bs/src/utils/Types.cmt
+o Types.res : cp ../../src/utils/Types.res
+o Storage.cmi : cp ../bs/src/utils/Storage.cmi
+o Storage.cmj : cp ../bs/src/utils/Storage.cmj
+o Storage.cmt : cp ../bs/src/utils/Storage.cmt
+o Storage.res : cp ../../src/utils/Storage.res
+o Constants.cmi : cp ../bs/src/utils/Constants.cmi
+o Constants.cmj : cp ../bs/src/utils/Constants.cmj
+o Constants.cmt : cp ../bs/src/utils/Constants.cmt
+o Constants.res : cp ../../src/utils/Constants.res
+build install.stamp : touch index.cmi index.cmj Header.cmi Header.cmj History.cmi History.cmj HistoryUtils.cmi HistoryUtils.cmj Amounts.cmi Amounts.cmj Balance.cmi Balance.cmj AddTxnForm.cmi AddTxnForm.cmj AddTxnFormUtils.cmi AddTxnFormUtils.cmj App.cmi App.cmj Types.cmi Types.cmj Storage.cmi Storage.cmj Constants.cmi Constants.cmj 

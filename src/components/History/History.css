@@ -1,0 +1,14 @@
+[class*="history-record"] {
+    box-shadow: 0px 1.5px 2px 0.5px rgb(152, 152, 152);
+    padding: 0.9rem 1rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.history-record-income {
+    border-right: 0.5rem solid rgb(20, 233, 20);
+}
+
+.history-record-expense {
+    border-right: 0.5rem solid rgb(233, 20, 20);
+}
