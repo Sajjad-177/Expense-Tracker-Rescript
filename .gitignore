@@ -23,3 +23,23 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+########################
+
+.DS_Store
+npm-debug.log
+/lib/bs/
+/node_modules/
+/bundleOutput/
+*.bundle.js
+*.env
+package.lock
+yarn-error.log*
+catalyst
+
+# reason
+lib
+.merlin
+.bsb.lock
+lib/*
+*.bs.js
