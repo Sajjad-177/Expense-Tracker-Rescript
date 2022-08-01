@@ -10,15 +10,13 @@ import './History.css'
 function $$History(Props) {
   var history = Props.history;
   return React.createElement("div", {
-              className: "flex-col gap-2",
-              id: "History"
+              className: "flex-col gap-2"
             }, React.createElement("h3", {
-                  className: "border-btm bold"
+                  className: "border-bottom bold"
                 }, "HISTORY"), React.createElement("div", {
-                  className: "flex-col gap-1",
-                  id: "history-list"
+                  className: "flex-col gap-1"
                 }, Belt_Array.mapWithIndex(history, (function (index, record) {
-                        return HistoryUtils.html_generator(record, index);
+                        return HistoryUtils.content_generator(record, index);
                       }))));
 }
 

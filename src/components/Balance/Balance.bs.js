@@ -7,12 +7,11 @@ function Balance(Props) {
   var balance = Props.balance;
   var f = Belt_Float.fromString(balance.toFixed(2));
   return React.createElement("div", {
-              className: "flex-col gap-1",
-              id: "Balance"
+              className: "flex-col gap-1"
             }, React.createElement("h3", {
                   className: "bold"
                 }, "YOUR BALANCE"), React.createElement("p", {
-                  className: "amount"
+                  className: "amount-font"
                 }, React.createElement("em", undefined, "$ "), f !== undefined ? f : 0.0));
 }
 

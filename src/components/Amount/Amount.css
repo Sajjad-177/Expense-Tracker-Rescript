@@ -1,0 +1,17 @@
+.amount {
+    padding: 3rem 0;
+    box-shadow: 0rem 0.15rem 0.25rem 0.07rem rgb(152, 152, 152);
+    background-color: white;
+}
+
+.income-card {
+    border-right: 0.1rem solid rgb(147, 147, 147);
+}
+
+.income-card .amount-font {
+    color: rgb(20, 233, 20);
+}
+
+.expense-card .amount-font {
+    color: rgb(233, 20, 20);
+}

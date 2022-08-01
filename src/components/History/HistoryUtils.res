@@ -1,12 +1,10 @@
-open Types
-
-let html_generator = (record: txn_record, index: int) => {
+let content_generator = (record: Transaction.t, index: int) => {
   let className: string = switch record.amount->Belt.Float.fromString {
     | None => ""
-    | Some(amt) => amt > 0.0 ? "history-record-income" : "history-record-expense"
+    | Some(amt) => amt > 0.0 ? "income" : "expense"
   }
 
-  <div key={index->Belt.Int.toString} className={className ++ " flex-row"}>
+  <div key={index->Belt.Int.toString} className={className ++ " history-record flex-row"}>
     <p> {record.remark->React.string} </p>
     <p className="">
       <em> {"$ "->React.string} </em>

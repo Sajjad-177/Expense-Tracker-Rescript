@@ -1,5 +1,9 @@
 @import url('styles/utils.css');
 
+html {
+    font-size: 62.5%;
+}
+
 h1, h3, p {
     margin: 0;
 }
@@ -10,32 +14,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  font-size: 16px;
+  /* box-sizing: border-box; */
+  font-size: 1.6rem;
   font-weight: 300;
-}
-
-#root {
-    height: 100vh;
-    overflow-y: scroll;
-    margin: 0 auto;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(212, 212, 212));
-    padding: 0 25%;
-}
-
-
-@media screen and (min-width: 450px) and (max-width: 767px) {
-    #root {
-        padding: 0 5%;
-    }
-}
-
-@media screen and (max-width: 449px) {
-    #root {
-        padding: 0 5%;
-    }
-
-    .amount {
-        font-size: 1.5rem;
-    }
 }

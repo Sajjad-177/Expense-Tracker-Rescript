@@ -11,14 +11,14 @@ S src/components/Header
 B lib/bs/src/components/Header
 S src/components/History
 B lib/bs/src/components/History
-S src/components/Amounts
-B lib/bs/src/components/Amounts
 S src/components/Balance
 B lib/bs/src/components/Balance
-S src/components/AddTxnForm
-B lib/bs/src/components/AddTxnForm
+S src/components/Amount
+B lib/bs/src/components/Amount
 S src/components/App
 B lib/bs/src/components/App
+S src/components/AddTransactionForm
+B lib/bs/src/components/AddTransactionForm
 S src/utils
 B lib/bs/src/utils
 ####BSB GENERATED: NO EDIT}

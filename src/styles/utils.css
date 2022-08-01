@@ -12,11 +12,11 @@
 }
 
 .gap-1 {
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .gap-2 {
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .align-center {
@@ -27,14 +27,20 @@
     font-weight: 500;
 }
 
-.amount {
-    font-size: 2rem;
+.amount-font {
+    font-size: 3rem;
     font-weight: 600;
 }
 
-.border-btm {
-    padding-bottom: 0.7rem;
-    border-bottom: 1.5px solid rgb(212, 212, 212);
+@media screen and (max-width: 44.9rem) {
+    .amount-font {
+        font-size: 2.5rem;
+    }
+}
+
+.border-bottom {
+    padding-bottom: 1rem;
+    border-bottom: 0.13rem solid rgb(212, 212, 212);
 }
 
 .text-align-center {

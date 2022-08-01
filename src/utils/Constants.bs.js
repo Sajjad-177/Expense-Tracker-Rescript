@@ -2,7 +2,7 @@
 
 
 function zero_amount_warning(param) {
-  ((alert('Zero amount not allowed!!!')));
+  ((alert('Enter a valid amount (>0)')));
   
 }
 

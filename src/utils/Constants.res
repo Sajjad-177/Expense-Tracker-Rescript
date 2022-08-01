@@ -1,6 +1,6 @@
 let session_storage_key = "Expense Tracker"
 
-let zero_amount_warning = () => {let _ = %raw("alert('Zero amount not allowed!!!')")}
+let zero_amount_warning = () => {let _ = %raw("alert('Enter a valid amount (>0)')")}
 
 let header = "EXPENSE TRACKER"
 

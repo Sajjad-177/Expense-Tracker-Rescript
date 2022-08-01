@@ -1,33 +1,30 @@
 %%raw("import './App.css'")
-open Types
 open Constants
+@scope("JSON") @val
+external parse: string => array<Transaction.t> = "parse"
 
 @react.component
 let make = () => {
   // App's state
-  let (state, setState) = React.useState(_ => {
-    income: 0.0,
-    expense: 0.0,
-    history: [],
-  })
-
-  React.useEffect0(() => {
-    setState(_ => {
-      Storage.getFromSessionStorage(session_storage_key, parseAppState)
-    })
-    None
-  })
+  let (transactions, setTransactions) = React.useState(_ => Storage.getFromSessionStorage(session_storage_key, parse))
 
   React.useEffect1(() => {
-    Storage.setToSessionStorage(session_storage_key, state)
+    Storage.setToSessionStorage(session_storage_key, transactions)
     None
-  }, [state])
+  }, [transactions])
 
-  <div id="App" className="flex-col">
-    <Header />
-    <Balance balance={state.income -. state.expense} />
-    <Amounts income={state.income} expense={state.expense} />
-    <History history={state.history} />
-    <AddTxnForm appSetState={setState} />
+  <div className="app">
+    <div className="flex-col app-container">
+      <Header />
+      <Balance
+        balance={AppUtils.getTotalIncome(transactions) -. AppUtils.getTotalExpense(transactions)}
+      />
+      <Amount
+        income={AppUtils.getTotalIncome(transactions)}
+        expense={AppUtils.getTotalExpense(transactions)}
+      />
+      <History history={transactions} />
+      <AddTransactionForm update_state={setTransactions} />
+    </div>
   </div>
 }

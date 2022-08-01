@@ -3,15 +3,15 @@
 import * as React from "react";
 import * as Belt_Float from "rescript/lib/es6/belt_Float.js";
 
-function html_generator(record, index) {
+function content_generator(record, index) {
   var amt = Belt_Float.fromString(record.amount);
   var className = amt !== undefined ? (
-      amt > 0.0 ? "history-record-income" : "history-record-expense"
+      amt > 0.0 ? "income" : "expense"
     ) : "";
   var amount = Belt_Float.fromString(record.amount);
   return React.createElement("div", {
               key: String(index),
-              className: className + " flex-row"
+              className: className + " history-record flex-row"
             }, React.createElement("p", undefined, record.remark), React.createElement("p", {
                   className: ""
                 }, React.createElement("em", undefined, "$ "), amount !== undefined ? (
@@ -20,7 +20,7 @@ function html_generator(record, index) {
 }
 
 export {
-  html_generator ,
+  content_generator ,
   
 }
 /* react Not a pure module */

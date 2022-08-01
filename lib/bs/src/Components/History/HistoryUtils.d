@@ -1,1 +1,1 @@
-src/components/History/HistoryUtils.cmj : src/utils/Types.cmj src/utils/Types.cmi
+src/components/History/HistoryUtils.cmj : src/utils/Transaction.cmj src/utils/Transaction.cmi

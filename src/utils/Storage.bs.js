@@ -2,7 +2,6 @@
 
 import * as Curry from "rescript/lib/es6/curry.js";
 import * as Belt_Option from "rescript/lib/es6/belt_Option.js";
-import * as Caml_option from "rescript/lib/es6/caml_option.js";
 
 function setToSessionStorage(key, value) {
   sessionStorage.setItem(key, Belt_Option.getExn(JSON.stringify(value)));
@@ -10,7 +9,12 @@ function setToSessionStorage(key, value) {
 }
 
 function getFromSessionStorage(key, parser) {
-  return Curry._1(parser, Belt_Option.getExn(Caml_option.null_to_opt(sessionStorage.getItem(key))));
+  var json = sessionStorage.getItem(key);
+  if (json !== null) {
+    return Curry._1(parser, json);
+  } else {
+    return [];
+  }
 }
 
 export {
