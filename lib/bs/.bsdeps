@@ -1,0 +1,16 @@
+9.1.4
+/Users/koenig/Desktop/expense-tracker-rescript
+0
+bsconfig.json	0x1.8b7ecca2e9332p+30
+src	0x1.8b9e771fb573ep+30
+src/components	0x1.8b9e6c6578184p+30
+src/components/Header	0x1.8b7ecca324b97p+30
+src/components/History	0x1.8b7ecca32565bp+30
+src/components/Balance	0x1.8b7ecca324533p+30
+src/components/Amount	0x1.8b9e652bd9d47p+30
+src/components/App	0x1.8b9ea56ae9123p+30
+src/components/AddTransactionForm	0x1.8b9e6d885788ap+30
+src/styles	0x1.8b7ecca32620cp+30
+src/utils	0x1.8b9f0225d847ep+30
+===
+/Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/rescript.exe	0x1.8b63a04eb699dp+30

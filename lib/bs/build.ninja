@@ -1,0 +1,50 @@
+rescript = 1
+g_finger := /Users/koenig/Desktop/expense-tracker-rescript/node_modules/@rescript/react/lib/ocaml/install.stamp
+rule astj
+  command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsc.exe  -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
+o src/Index.ast : astj ../../src/Index.res
+rule deps
+  command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsb_helper.exe -hash 170b421865048db18fdf0be0776175a5 $in
+  restat = 1
+o src/Index.d : deps src/Index.ast
+rule mij
+  command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsc.exe -I src/utils -I src/styles -I src/components/AddTransactionForm -I src/components/App -I src/components/Amount -I src/components/Balance -I src/components/History -I src/components/Header -I src/components -I src -I /Users/koenig/Desktop/expense-tracker-rescript/node_modules/@rescript/react/lib/ocaml   -bs-package-name your-project-name -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/Index.cmj src/Index.cmi ../../src/Index.bs.js : mij src/Index.ast
+o src/components/Header/Header.ast : astj ../../src/components/Header/Header.res
+o src/components/Header/Header.d : deps src/components/Header/Header.ast
+o src/components/Header/Header.cmj src/components/Header/Header.cmi ../../src/components/Header/Header.bs.js : mij src/components/Header/Header.ast
+o src/components/History/History.ast : astj ../../src/components/History/History.res
+o src/components/History/History.d : deps src/components/History/History.ast
+o src/components/History/History.cmj src/components/History/History.cmi ../../src/components/History/History.bs.js : mij src/components/History/History.ast
+o src/components/History/HistoryUtils.ast : astj ../../src/components/History/HistoryUtils.res
+o src/components/History/HistoryUtils.d : deps src/components/History/HistoryUtils.ast
+o src/components/History/HistoryUtils.cmj src/components/History/HistoryUtils.cmi ../../src/components/History/HistoryUtils.bs.js : mij src/components/History/HistoryUtils.ast
+o src/components/Balance/Balance.ast : astj ../../src/components/Balance/Balance.res
+o src/components/Balance/Balance.d : deps src/components/Balance/Balance.ast
+o src/components/Balance/Balance.cmj src/components/Balance/Balance.cmi ../../src/components/Balance/Balance.bs.js : mij src/components/Balance/Balance.ast
+o src/components/Amount/Amount.ast : astj ../../src/components/Amount/Amount.res
+o src/components/Amount/Amount.d : deps src/components/Amount/Amount.ast
+o src/components/Amount/Amount.cmj src/components/Amount/Amount.cmi ../../src/components/Amount/Amount.bs.js : mij src/components/Amount/Amount.ast
+o src/components/App/App.ast : astj ../../src/components/App/App.res
+o src/components/App/App.d : deps src/components/App/App.ast
+o src/components/App/App.cmj src/components/App/App.cmi ../../src/components/App/App.bs.js : mij src/components/App/App.ast
+o src/components/App/AppUtils.ast : astj ../../src/components/App/AppUtils.res
+o src/components/App/AppUtils.d : deps src/components/App/AppUtils.ast
+o src/components/App/AppUtils.cmj src/components/App/AppUtils.cmi ../../src/components/App/AppUtils.bs.js : mij src/components/App/AppUtils.ast
+o src/components/AddTransactionForm/AddTransactionForm.ast : astj ../../src/components/AddTransactionForm/AddTransactionForm.res
+o src/components/AddTransactionForm/AddTransactionForm.d : deps src/components/AddTransactionForm/AddTransactionForm.ast
+o src/components/AddTransactionForm/AddTransactionForm.cmj src/components/AddTransactionForm/AddTransactionForm.cmi ../../src/components/AddTransactionForm/AddTransactionForm.bs.js : mij src/components/AddTransactionForm/AddTransactionForm.ast
+o src/components/AddTransactionForm/AddTransactionFormUtils.ast : astj ../../src/components/AddTransactionForm/AddTransactionFormUtils.res
+o src/components/AddTransactionForm/AddTransactionFormUtils.d : deps src/components/AddTransactionForm/AddTransactionFormUtils.ast
+o src/components/AddTransactionForm/AddTransactionFormUtils.cmj src/components/AddTransactionForm/AddTransactionFormUtils.cmi ../../src/components/AddTransactionForm/AddTransactionFormUtils.bs.js : mij src/components/AddTransactionForm/AddTransactionFormUtils.ast
+o src/utils/Storage.ast : astj ../../src/utils/Storage.res
+o src/utils/Storage.d : deps src/utils/Storage.ast
+o src/utils/Storage.cmj src/utils/Storage.cmi ../../src/utils/Storage.bs.js : mij src/utils/Storage.ast
+o src/utils/Constants.ast : astj ../../src/utils/Constants.res
+o src/utils/Constants.d : deps src/utils/Constants.ast
+o src/utils/Constants.cmj src/utils/Constants.cmi ../../src/utils/Constants.bs.js : mij src/utils/Constants.ast
+o src/utils/Transaction.ast : astj ../../src/utils/Transaction.res
+o src/utils/Transaction.d : deps src/utils/Transaction.ast
+o src/utils/Transaction.cmj src/utils/Transaction.cmi ../../src/utils/Transaction.bs.js : mij src/utils/Transaction.ast

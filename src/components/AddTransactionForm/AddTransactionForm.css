@@ -1,0 +1,21 @@
+.form-input {
+    border: 0;
+    font-size: large;
+    padding: 1rem 1rem;
+    outline: none;
+}
+
+.form-input:focus {
+    box-shadow: 0rem 0rem 0.1rem 0.25rem rgb(45, 194, 239);
+}
+
+.form-input::placeholder {
+    color: rgb(141, 141, 141);
+    opacity: 0.7;
+    font-size: medium;
+}
+
+.submit-button {
+    background-color: rgb(145, 95, 220);
+    color: white;
+}

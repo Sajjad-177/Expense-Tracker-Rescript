@@ -1,0 +1,48 @@
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 1.5rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.amount-font {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 44.9rem) {
+    .amount-font {
+        font-size: 2.5rem;
+    }
+}
+
+.border-bottom {
+    padding-bottom: 1rem;
+    border-bottom: 0.13rem solid rgb(212, 212, 212);
+}
+
+.text-align-center {
+    text-align: center;
+}

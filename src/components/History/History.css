@@ -1,0 +1,14 @@
+.history-record {
+    box-shadow: 0rem 0.15rem 0.2rem 0.05rem rgb(152, 152, 152);
+    padding: 1.5rem 1.5rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.income {
+    border-right: 1rem solid rgb(20, 233, 20);
+}
+
+.expense {
+    border-right: 1rem solid rgb(233, 20, 20);
+}

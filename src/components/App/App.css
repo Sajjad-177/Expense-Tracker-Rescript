@@ -1,0 +1,22 @@
+.app {
+    height: 100vh;
+    overflow-y: scroll;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(212, 212, 212));
+}
+
+.app-container {
+    gap: 2.5rem;
+    padding: 1.5rem 25%;
+}
+
+@media screen and (min-width: 45rem) and (max-width: 76.7rem) {
+    .app-container {
+        padding: 1.5rem 5%;
+    }
+}
+
+@media screen and (max-width: 44.9rem) {
+    .app-container {
+        padding: 1.5rem 5%;
+    }
+}
