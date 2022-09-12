@@ -51,8 +51,12 @@ o Constants.cmi : cp ../bs/src/utils/Constants.cmi
 o Constants.cmj : cp ../bs/src/utils/Constants.cmj
 o Constants.cmt : cp ../bs/src/utils/Constants.cmt
 o Constants.res : cp ../../src/utils/Constants.res
+o UtilHooks.cmi : cp ../bs/src/utils/UtilHooks.cmi
+o UtilHooks.cmj : cp ../bs/src/utils/UtilHooks.cmj
+o UtilHooks.cmt : cp ../bs/src/utils/UtilHooks.cmt
+o UtilHooks.res : cp ../../src/utils/UtilHooks.res
 o Transaction.cmi : cp ../bs/src/utils/Transaction.cmi
 o Transaction.cmj : cp ../bs/src/utils/Transaction.cmj
 o Transaction.cmt : cp ../bs/src/utils/Transaction.cmt
 o Transaction.res : cp ../../src/utils/Transaction.res
-build install.stamp : touch Index.cmi Index.cmj Header.cmi Header.cmj History.cmi History.cmj HistoryUtils.cmi HistoryUtils.cmj Balance.cmi Balance.cmj Amount.cmi Amount.cmj App.cmi App.cmj AppUtils.cmi AppUtils.cmj AddTransactionForm.cmi AddTransactionForm.cmj AddTransactionFormUtils.cmi AddTransactionFormUtils.cmj Storage.cmi Storage.cmj Constants.cmi Constants.cmj Transaction.cmi Transaction.cmj 
+build install.stamp : touch Index.cmi Index.cmj Header.cmi Header.cmj History.cmi History.cmj HistoryUtils.cmi HistoryUtils.cmj Balance.cmi Balance.cmj Amount.cmi Amount.cmj App.cmi App.cmj AppUtils.cmi AppUtils.cmj AddTransactionForm.cmi AddTransactionForm.cmj AddTransactionFormUtils.cmi AddTransactionFormUtils.cmj Storage.cmi Storage.cmj Constants.cmi Constants.cmj UtilHooks.cmi UtilHooks.cmj Transaction.cmi Transaction.cmj 

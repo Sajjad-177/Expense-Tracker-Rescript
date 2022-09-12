@@ -1,10 +1,18 @@
-let content_generator = (record: Transaction.t, index: int) => {
+let content_generator = (
+  record: Transaction.t,
+  index: int,
+  getAccordionItemClass,
+  accordionOnClick,
+) => {
   let className: string = switch record.amount->Belt.Float.fromString {
-    | None => ""
-    | Some(amt) => amt > 0.0 ? "income" : "expense"
+  | None => ""
+  | Some(amt) => amt > 0.0 ? "income" : "expense"
   }
 
-  <div key={index->Belt.Int.toString} className={className ++ " history-record flex-row"}>
+  <div
+    key={index->Belt.Int.toString}
+    className={className ++ " history-record flex-row " ++ getAccordionItemClass(index)}
+    onClick={_ => accordionOnClick(index)}>
     <p> {record.remark->React.string} </p>
     <p className="">
       <em> {"$ "->React.string} </em>

@@ -4,7 +4,7 @@ rule astj
   command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsc.exe  -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
 o src/Index.ast : astj ../../src/Index.res
 rule deps
-  command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsb_helper.exe -hash 170b421865048db18fdf0be0776175a5 $in
+  command = /Users/koenig/Desktop/expense-tracker-rescript/node_modules/rescript/darwin/bsb_helper.exe -hash b3131af06edc61cd1ebbfec5439231cf $in
   restat = 1
 o src/Index.d : deps src/Index.ast
 rule mij
@@ -45,6 +45,9 @@ o src/utils/Storage.cmj src/utils/Storage.cmi ../../src/utils/Storage.bs.js : mi
 o src/utils/Constants.ast : astj ../../src/utils/Constants.res
 o src/utils/Constants.d : deps src/utils/Constants.ast
 o src/utils/Constants.cmj src/utils/Constants.cmi ../../src/utils/Constants.bs.js : mij src/utils/Constants.ast
+o src/utils/UtilHooks.ast : astj ../../src/utils/UtilHooks.res
+o src/utils/UtilHooks.d : deps src/utils/UtilHooks.ast
+o src/utils/UtilHooks.cmj src/utils/UtilHooks.cmi ../../src/utils/UtilHooks.bs.js : mij src/utils/UtilHooks.ast
 o src/utils/Transaction.ast : astj ../../src/utils/Transaction.res
 o src/utils/Transaction.d : deps src/utils/Transaction.ast
 o src/utils/Transaction.cmj src/utils/Transaction.cmi ../../src/utils/Transaction.bs.js : mij src/utils/Transaction.ast
